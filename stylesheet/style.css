@@ -16,6 +16,8 @@
 .application-wrapper{
   height: 100vh;
   position: relative;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 body {
