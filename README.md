@@ -1,0 +1,1 @@
+A application to store notes. it adds, edit and delete notes easily.
