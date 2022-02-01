@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="" content="">
+  <title>StackNotes - online box for all your notes</title>
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="scripts/script.js"></script>
+</head>
+<body>
+  <div class="application-wrapper">
+    <header class="header">
+      <h1 class="header__main-heading">
+        StackNotes
+      </h1>
+    </header>
+    <main class="main">
+      <section class="notes">
+        <h2 class="notes__heading">All Notes</h2>
+        <div class="notes__container">
+
+        </div>
+      </section>
+
+      <div class="overlay hidden">
+        <section class="add-notes hidden">
+          <h2 class="add-notes__heading">
+            Add New Note
+          </h2>
+
+          <h3 class="add-notes__sub-heading">
+            Title
+          </h3>
+          <input type="text" placeholder="Title" class="add-notes__title">
+
+          <h3 class="add-notes__sub-heading">
+            Note
+          </h3>
+          <textarea placeholder="Enter note" class="add-notes__text"></textarea>
+          <button class="add-notes__button">
+            Add
+          </button>
+        </section>
+
+        <section class="edit-note hidden">
+          <h2 class="edit-note__heading">
+            Edit Note
+          </h2>
+
+          <h3 class="edit-note__sub-heading">
+            Title
+          </h3>
+          <input type="text" placeholder="Title" class="edit-note__title">
+
+          <h3 class="edit-note__sub-heading">
+            Note
+          </h3>
+          <textarea placeholder="Enter note" class="edit-note__text"></textarea>
+          <button class="edit-note__save">
+            Save
+          </button>
+        </section>
+
+        <section class="view-note hidden">
+          <p class="view-note__close">x</p>
+          <h2 class="view-note__title">
+            The 9 Planets
+          </h2>
+
+          <p class="view-note__note">
+            
+          </p>
+        </section>
+
+        <section class="delete-note-modal hidden">
+          <h2 class="delete-note-modal__heading">
+            Do you want to delete this note ?
+          </h2>
+
+          <div class="delete-note-modal__actions">
+            <button class="delete-note-modal__btn delete-note-modal__yes">
+              Yes
+            </button>
+
+            <button class="delete-note-modal__btn delete-note-modal__no">
+              No
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <button class="button-add-note">
+        +
+      </button>
+    </main>
+  </div>
+</body>
+</html>
